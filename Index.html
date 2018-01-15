@@ -13,9 +13,33 @@
         <h1>Thingis sick o web</h1>
       </header>
       
-      <main>
-      <img src="https://cdn.discordapp.com/attachments/376691472977756160/402447440109895682/You_are_my_universe.png" alt="fett fet ost">
+      <main id="MainImg">
+      <img class="mySlides w3-animate-fading" src="img/Kopertje.png">
+	  <img class="mySlides w3-animate-fading" src="img/MordenNoob.png">
+	  <img class="mySlides w3-animate-fading" src="img/NotKid.png">
+	  <img class="mySlides w3-animate-fading" src="img/SpaceJen.png">
+	  <img class="mySlides w3-animate-fading" src="img/StarJen.png">
+	  <img class="mySlides w3-animate-fading" src="img/Universe.png">
+	  <img class="mySlides w3-animate-fading" src="img/Zen.png">
       </main>
+	  
+	 <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+</script>
+	  
       <blockquote>
       	<h2>Social Media<h2>
         <div id="socimg">
