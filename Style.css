@@ -8,23 +8,55 @@ body {
 }
 
 #page {
-  width:1200px; 
+	width:100%;
+  max-width:1200px; 
   margin: 0 auto; 
   position:relative;
 }
 
 /*   __Header__   */
 header {z-index: 1; margin: 0; position:absolute;}
-header img { width: 100px; margin: 20px; display:inline;}
-header h1 {display:inline; position: absolute; top: 15px; width: 200px;}
+header img { width: 100px; margin: 5px 20px; display:inline;}
+header h1 {display:inline; position: absolute; top: 0px; width: 200px;}
 
 /*   __Main__   */
 main img {width: 100%;}
 .w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
 
 /*   ___blockqoute___   */
+.block {
+	padding-top:15px;
+	z-index:0;
+	width:23%;
+	height:40px;
+	color:#444;
+	background-color: #fff;
+	position:absolute;
+	bottom:300px;
+	right:4%;
+	transition:height 4s;
+	text-align:center;
+}
+.block:hover {
+	height:40%;
+}
+.block h2 {
+	display:inline;
+}
+.block img {
+	width:60%;
+	display:block;
+	transition:width 4s;
+	margin:auto;
+	margin-top:10px;
+}
+.block:hover img {
+}
 
 /*   ___footer___   */
+footer {height:300px; background-color:white; z-index:1; position:relative;}
+
+
 
 /*   __nav__    */
 nav {
