@@ -14,7 +14,7 @@ body {
 }
 
 /*   __Header__   */
-header {}
+header {z-index: 1; margin: 0; position:absolute;}
 header img { width: 100px; margin: 20px; display:inline;}
 header h1 {display:inline; position: absolute; top: 15px; width: 200px;}
 
@@ -46,10 +46,9 @@ nav ul li a {
 	position: relative;
 } 
 
-nav ul ul { position: absolute; top: 100%; background-color: #312135; display: none;}
-nav ul li:hover { background-color: #5c0d74;}
+nav ul ul { position: absolute; top: 100%; background-color: rgba(49,33,53,.80); display: none;}
+nav ul li:hover { background-color: rgba(92,13,116,.75);}
 nav ul li:hover > ul {display: block;} 
 nav > ul > li {float:left;}
 nav ul ul li { position: relative; }
 nav ul ul ul { left: 100%; top: 0px; }
-
