@@ -17,7 +17,7 @@ body {
 /*   __Header__   */
 header {z-index: 2; margin: 0; position:fixed;}
 header img { width: 80px; margin: 5px 20px -10px 20px; display:inline;}
-header h1 {display:inline; position: relative; top: 0px; color:#fff;}
+header h1, header h1 a, header h1 a:visited{text-decoration:none; display:inline; position: relative; top: 0px; color:#fff;}
 
 /*   __Main__   */
 main img {width: 100%;}
@@ -35,11 +35,13 @@ main img {width: 100%;}
 	right:0;
 	top:0;
 }
+.ex::after {clear:both;}
 .ex img {
 	float:left;
-	width:50%;
+	width:70%;
 	margin:0;
 }
+.ex img::after {clear:both;}
 @media screen and (min-width:1000px){
 	.ex img.imgex:hover {
 		z-index:1;
@@ -143,10 +145,10 @@ nav ul li a {
 } 
 
 
-nav ul ul { position: absolute; top: 100%; background-color: rgba(49,33,53,.80); display: none;}
+nav ul ul { position: absolute; top: 100%; display: none; background-color: rgba(49,33,53,.80);}
 nav ul li:hover { background-color: rgba(92,13,116,.75);}
 nav ul li:hover > ul {display: block;} 
-nav > ul > li {float:left;}
+@media screen and (min-width:695px) {nav > ul > li {float:left;}}
 nav ul ul li { position: relative; }
 nav ul ul ul { left: 100%; top: 0px; }
 
@@ -188,6 +190,69 @@ nav ul ul ul { left: 100%; top: 0px; }
 		width:70px;
 		font-size:.8em;
 	}
+}
+
+@media screen and (max-width:695px) {
+	/*Header*/
+	header { width:100%; background-color:rgba(0,0,0,.65);} 
+	header img {display:none;}
+	header h1, header h1 a,header h1 a:visited {display:block; position: relative; top: 0px; color:#fff; text-align:center;}
+
+	/*Commitions*/
+		/*section*/
+		.ex {
+			position:relative;
+			width:auto;
+		}
+		.ex img {float:none; width:70%; margin:0 15%;}
+		section.commission {
+			height:auto;
+		}
+		#headsec {
+			height:auto;
+		}
+		section.commission .infotxt {
+			width:auto;
+		}
+
+
+
+
+	/*nav*/
+	nav { position: static; width:auto; padding:20px 15px; background-color: rgba(49,33,53,1); }
+	
+	nav ul,
+	nav ul ul,
+	nav ul ul ul {
+		display:block;
+		position:static;
+	}
+	
+	nav > ul { padding:0;}
+	
+	nav > ul > li { float:none; margin-top:25px;}
+	
+	nav ul li:hover {background:none;}
+	nav ul li a {
+		width:auto;
+		display:block;
+		margin:8px 10px;
+		padding:8px 16px;
+		border:1px solid rgba(255,255,255,.25);
+	}
+	nav ul li a:hover { background-color: rgba(92,13,116,.25);}
+	
+	nav ul ul { background:none;}
+	
+	nav ul ul li a {margin-left:30px;}
+	nav ul ul ul li a {margin-left:60px;}
+	
+	nav a[aria-haspopup="true"]::after {display:none;}
+	
+	footer {display:none;}
+	
+	
+	
 }
 
 
