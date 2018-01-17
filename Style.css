@@ -63,8 +63,9 @@ section.commission {
 section.commission h2 {
 	text-align:center;
 }
-section.commission > span {
+div.comlink {
 	position:absolute;
+	display:block;
 	top:-120px;
 }
 
