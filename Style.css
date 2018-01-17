@@ -15,13 +15,52 @@ body {
 }
 
 /*   __Header__   */
-header {z-index: 2; margin: 0; position:absolute;}
-header img { width: 100px; margin: 5px 20px; display:inline;}
-header h1 {display:inline; position: relative; top: 0px; width: 200px; color:#fff;}
+header {z-index: 2; margin: 0; position:fixed;}
+header img { width: 80px; margin: 5px 20px -10px 20px; display:inline;}
+header h1 {display:inline; position: relative; top: 0px; color:#fff;}
 
 /*   __Main__   */
 main img {width: 100%;}
 .w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+
+/*commissions*/
+.infotxt {
+	width:40%;
+	margin:5px 5%;
+}
+.ex {
+	width:40%;
+	margin:0 5%;
+	position:absolute;
+	right:0;
+	top:0;
+}
+.ex img {
+	float:left;
+	width:50%;
+	margin:0;
+}
+@media screen and (min-width:1000px){
+	.ex img.imgex:hover {
+		z-index:1;
+		width:100%;
+		top:68px;
+		position:absolute;
+	}
+}
+section.commission {
+	border:1px solid #777;
+	margin:5%;
+	position:relative;
+}
+section.commission h2 {
+	text-align:center;
+}
+section.commission > span {
+	position:absolute;
+	top:-120px;
+}
+
 
 /*   ___blockqoute___   */
 .block {
@@ -35,7 +74,7 @@ main img {width: 100%;}
 	position:absolute;
 	bottom:30px;
 	right:4%;
-	transition:height 2s;
+	transition:height 1.5s;
 	text-align:center;
 }
 .block:hover {
@@ -62,9 +101,9 @@ footer {height:30px; background-color:white; position:relative;}
 /*   __nav__    */
 nav {
 	background-color: rgba(0,0,0,.65); 
-	 position: absolute;
+	 position: fixed;
 	 top: 0px; left: 0;
-	 padding: 60px 0 0 35%;
+	 padding: 30px 0 0 35%;
 	 width: 65%;
 	 text-align: center;
 	z-index:1;
@@ -110,3 +149,51 @@ nav ul li:hover > ul {display: block;}
 nav > ul > li {float:left;}
 nav ul ul li { position: relative; }
 nav ul ul ul { left: 100%; top: 0px; }
+
+
+@media screen and (max-width:1000px) {
+	/*header*/
+	h1 { font-size:1.4em; }
+	header img {width:60px;}
+	
+	/*commission*/
+		/*section*/
+		section.commission {
+			height:900px;
+		}
+		#headsec {
+			height:800px;
+		}
+		/*example*/
+		.ex img {width:100%;}
+
+	/*nav*/
+	nav { padding-top:10px; }
+	nav ul li a {
+		width:90px;
+		font-size:1em;
+	}
+	
+}
+
+@media screen and (max-width:825px) {
+	h2 {font-size:1.4em;}
+	h3 {font-size:1.2em;}
+	/*nav*/
+	nav { padding-top:10px; }
+	nav ul li a {
+		width:70px;
+		font-size:.8em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
