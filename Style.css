@@ -179,6 +179,9 @@ nav ul ul ul { left: 100%; top: 0px; }
 @media screen and (max-width:825px) {
 	h2 {font-size:1.4em;}
 	h3 {font-size:1.2em;}
+	/*header*/
+	header img {width:55px;}
+	
 	/*nav*/
 	nav { padding-top:10px; }
 	nav ul li a {
