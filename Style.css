@@ -15,9 +15,9 @@ body {
 }
 
 /*   __Header__   */
-header {z-index: 1; margin: 0; position:absolute;}
+header {z-index: 2; margin: 0; position:absolute;}
 header img { width: 100px; margin: 5px 20px; display:inline;}
-header h1 {display:inline; position: absolute; top: 0px; width: 200px;}
+header h1 {display:inline; position: relative; top: 0px; width: 200px; color:#fff;}
 
 /*   __Main__   */
 main img {width: 100%;}
@@ -55,7 +55,7 @@ main img {width: 100%;}
 
 
 /*   ___footer___   */
-footer {height:30px; background-color:white; z-index:1; position:relative;}
+footer {height:30px; background-color:white; position:relative;}
 
 
 
@@ -64,9 +64,10 @@ nav {
 	background-color: rgba(0,0,0,.65); 
 	 position: absolute;
 	 top: 0px; left: 0;
-	 padding: 80px 0 0 35%;
+	 padding: 60px 0 0 35%;
 	 width: 65%;
 	 text-align: center;
+	z-index:1;
  }
 nav::after {content:''; display: both;}
 
