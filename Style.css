@@ -7,11 +7,22 @@ body {
 	padding: 0;
 }
 
+@keyframes example {
+    from {background-position:0 0 ;}
+    to {background-position: 100px 100px;}
+}
+
 #page {
+	animation-name:example;
+	animation-duration:4s;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear;
 	width:100%;
   max-width:1200px; 
   margin: 0 auto; 
   position:relative;
+  background-image:url(img/puff.png);
+  background-size:100px 100px;
 }
 
 /*   __Header__   */
@@ -20,64 +31,68 @@ header img { width: 80px; margin: 5px 20px -10px 20px; display:inline;}
 header h1, header h1 a, header h1 a:visited{text-decoration:none; display:inline; position: relative; top: 0px; color:#fff;}
 
 /*   __Main__   */
+main { background-color:#fff;}
 main img {width: 100%;}
 .w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
 
 /*commissions*/
-.infotxt {
-	float:left;
-	width:40%;
-	margin:0 5% ;
-}
-.ex {
-	width:35%;
-	margin:0 5%;
-	float:right;
-	right:0;
-	top:0;
-}
-.ex img {
-	width:70%;
-	margin:0 15%;
-	transition:width 1s, margin 1s;
-}
-
-@media screen and (min-width:695px){
-	.ex img.imgex:hover {
-		z-index:1;
-		width:130%;
-		top:68px;
-		margin:0 -15%;
+	.infotxt {
+		float:left;
+		width:40%;
+		margin:0 5% ;
 	}
-}
-section.commission {
-	border:1px solid #777;
-	margin:5%;
-	padding:10px; 
-	position:relative;
-}
-section.commission {
-	content:'';
-	clear:both;
-	display:table;
-}
-section.commission h2 {
-	text-align:center;
-}
-div.comlink {
-	position:absolute;
-	display:block;
-	top:-120px;
-}
+	.ex {
+		width:35%;
+		margin:0 5%;
+		float:right;
+		right:0;
+		top:0;
+	}
+	.ex img {
+		width:70%;
+		margin:0 15%;
+		transition:width 1s, margin 1s;
+	}
+
+	@media screen and (min-width:695px){
+		.ex img.imgex:hover {
+			z-index:1;
+			width:130%;
+			top:68px;
+			margin:0 -15%;
+		}
+	}
+	section.commission {
+		border:1px solid #777;
+		margin:5%;
+		padding:10px; 
+		position:relative;
+		background-color:#fff;
+	}
+	section.commission {
+		content:'';
+		clear:both;
+		display:table;
+	}
+	section.commission h2 {
+		text-align:center;
+	}
+	div.comlink {
+		position:absolute;
+		display:block;
+		top:-120px;
+	}
 
 /*About us*/
 	/*section staff*/
+	.about::after {content:'';clear:both;display:table;}
 	.stafftxt {
 		padding:2.3%;
 		margin:2.5%;
 		width:40%;
 		border:2px solid #777;
 		height:500px;
+		background-color:#fff;
 	}
 	.stafftxt {float:left;}
 	img.avatar {
