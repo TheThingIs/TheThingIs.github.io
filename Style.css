@@ -41,6 +41,7 @@ main img {width: 100%;}
 	margin:0 15%;
 	transition:width 1s, margin 1s;
 }
+
 @media screen and (min-width:695px){
 	.ex img.imgex:hover {
 		z-index:1;
@@ -68,6 +69,27 @@ div.comlink {
 	display:block;
 	top:-120px;
 }
+
+/*About us*/
+	/*section staff*/
+	.stafftxt {
+		padding:10px;
+		margin:5% auto;
+		width:60%;
+		border:2px solid #777;
+	}
+	.stafftxt img.avatar {
+		width:80px;
+		border-radius:50%;
+	}
+	.stafftxt span {position:relative;}
+	.stafftxt h2 {
+		display:inline;
+		position:absolute;
+		bottom:40%;
+		left:100%;
+	}
+
 
 
 /*   ___blockqoute___   */
