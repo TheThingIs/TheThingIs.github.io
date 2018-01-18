@@ -5,6 +5,13 @@ body {
 	color: #555;
 	margin: 0;
 	padding: 0;
+	background-image:url(img/puff.png);
+  background-size:100px 100px;
+  background-color:rgba(49,33,53,.80);
+  animation-name:example;
+	animation-duration:4s;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear;
 }
 
 @keyframes example {
@@ -13,16 +20,12 @@ body {
 }
 
 #page {
-	animation-name:example;
-	animation-duration:4s;
-	animation-iteration-count: infinite;
-	animation-timing-function:linear;
+	
 	width:100%;
   max-width:1200px; 
   margin: 0 auto; 
   position:relative;
-  background-image:url(img/puff.png);
-  background-size:100px 100px;
+  
 }
 
 /*   __Header__   */
