@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Games</title>
+		<meta charset="utf-8">
+		<link href="../Style.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div id="page">
+      <header>
+      	<a href="../index.html"><img src="https://cdn.discordapp.com/avatars/260115645696442371/4c900c8afcb9fb93dc9187b9e0458430.jpg?size=128" alt=ThingIsLogo></a>
+        <h1>TheThingIs</h1>
+      </header>
+      
+     <main id="MainImg">
+      <img class="mySlides w3-animate-fading" src="../img/starjen.png">
+	  <img class="mySlides w3-animate-fading" src="../img/mordennoob.png">
+	  <img class="mySlides w3-animate-fading" src="../img/zen.png">
+	  <img class="mySlides w3-animate-fading" src="../img/spacejen.png">
+	  <img class="mySlides w3-animate-fading" src="../img/kopertje.png">
+	  
+	  <img class="mySlides w3-animate-fading" src="../img/notkid.png">
+	  <img class="mySlides w3-animate-fading" src="../img/evets.png">
+	  <img class="mySlides w3-animate-fading" src="../img/universe.png">
+      </main>
+	  
+	 <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+</script>
+		
+		<section id="intro"> 
+			<p><strong>Here you can read about the diffrent games and streams I host on my channel</strong></p>
+		</section>
+		
+		<section class="games">
+		
+		</section>
+		
+      <nav>
+        <ul>
+          <li>
+          	<a href="about_us" title="About Us" aria-haspopup="true">About Us</a>
+            <ul>
+              <li><a href="../about_us.html#thethingis" title="TheThingIs">TheThingIs</a></li>
+              <li><a href="../about_us.html#staff" title="Staff">Staff</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+        	<li>
+          	<a href="#" title="Streams" aria-haspopup="true">Streams</a>
+            <ul>
+              <li><a href="https://www.twitch.tv/thethingis" title="To my Twitch">Where</a></li>
+              <li><a href="#" title="Games">Games</a></li>
+			  <li><a href="#" title="Other Stremers" aria-haspopup="true">Feature Streamers</a>
+				<ul>
+				<li><a href="https://www.twitch.tv/unpronounceablee" title="Watch Unpronounceble">Unpronounceble</a>
+				<li><a href="https://www.twitch.tv/jenulot" title="Watch Jenulot">Jenulot</a>
+				<li><a href="#" title="Show more">Full list</a></li>
+				</ul>
+				</ul>
+			  </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+        	<li>
+          	<a href="#" title="Art" aria-haspopup="true">Art</a>
+          	<ul>
+              <li><a href="../Art/commission.html" title="Commission"aria-haspopup="true">Commission</a>
+              	<ul>
+                  <li><a href="../Art/commission.html#head" title="Head">Head</a></li>
+                  <li><a href="../Art/commission.html#full" title="Full">Full</a></li>
+                  <li><a href="../Art/commission.html#complex" title="Complex">Complex</a></li>
+                </ul>
+              </li>
+              <li><a href="../Art/#" title="Tools">Tools</a></li>
+              <li><a href="../Art/#" title="Library">Library</a></li>
+			  <li><a href="../Art/#" title="I wish">Fan art</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+        	<li>
+          	<a href="#" aria-haspopup="true">Contact Me</a>
+            <ul>
+              <li><a href="https://discord.gg/J92hFHr" title="Discord">Discord</a></li>
+              <li><a href="https://www.instagram.com/thethingis00/" title="Instagram">Instagram</a></li>
+              <li><a href="https://twitter.com/TheThingIs00" title="Twitter">Twitter</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      
+      <footer>
+		<p>&copy TheThingIs</p>
+      	<div>
+        	<i>Made by TheThingIs and Linus Okänd</i>
+        </div>
+      </footer>
+    	
+    	
+    	
+    	
+    </div>
+	</body>
+</html>
