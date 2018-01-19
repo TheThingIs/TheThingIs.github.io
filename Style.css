@@ -123,7 +123,7 @@ main img {width: 100%;}
 	color:#444;
 	background-color: #fff;
 	position:absolute;
-	bottom:30px;
+	bottom:84px;
 	right:4%;
 	transition:height 1.5s;
 	text-align:center;
@@ -145,7 +145,14 @@ main img {width: 100%;}
 
 
 /*   ___footer___   */
-footer {height:30px; background-color:white; position:relative;}
+footer {height:64px; background-color:white; position:relative; padding:10px;}
+footer p {
+	display:inline;
+	position:absolute;
+	bottom:10px;
+	margin:0;
+}
+footer div {display:inline; margin:0; position:absolute; bottom:10px; left:150px;}
 
 
 
