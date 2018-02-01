@@ -268,8 +268,12 @@ nav ul ul ul { left: 100%; top: 0px; }
 		section.commission .infotxt {
 			width:auto;
 		}
-
-
+	
+	
+	/*block*/
+	.block{
+		display:none;
+	}
 
 
 	/*nav*/
@@ -298,8 +302,8 @@ nav ul ul ul { left: 100%; top: 0px; }
 	
 	nav ul ul { background:none;}
 	
-	nav ul ul li a {margin-left:30px;}
-	nav ul ul ul li a {margin-left:60px;}
+	nav ul ul li a {margin-left:60px;}
+	nav ul ul ul li a {margin-left:120px;}
 	
 	nav a[aria-haspopup="true"]::after {display:none;}
 	
