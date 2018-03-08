@@ -24,7 +24,7 @@ body {
 #page {
 	
 	width:100%;
-  max-width:1200px; 
+  max-width:80%; 
   margin: 0 auto; 
   position:relative;
   
@@ -44,7 +44,9 @@ main img {width: 100%;}
 	.infotxt {
 		float:left;
 		width:40%;
-		margin:0 5% ;
+		margin:15% 5% 0 5%;
+		padding:5%;
+		background-color:white;
 	}
 	.ex {
 		width:35%;
@@ -69,7 +71,7 @@ main img {width: 100%;}
 	}
 	section.commission {
 		border:1px solid #777;
-		margin:5%;
+		margin:0%;
 		padding:10px; 
 		position:relative;
 		background-color:#fff;
@@ -86,6 +88,27 @@ main img {width: 100%;}
 		position:absolute;
 		display:block;
 		top:-120px;
+	}
+	#headsec{
+		height:100vh;
+		background-image:url(img/universe.png);
+		background-size:cover;
+		display:table;
+		background-attachment:fixed;
+	}
+	#fullsec{
+		height:100vh;
+		background-image:url(img/kopertje.png);
+		background-size:cover;
+		display:table;
+		background-attachment:fixed;
+	}
+	#complexsec{
+		height:100vh;
+		background-image:url(img/evets.png);
+		background-size:cover;
+		display:table;
+		background-attachment:fixed;
 	}
 
 /*About us*/
@@ -248,12 +271,16 @@ nav ul ul ul { left: 100%; top: 0px; }
 	
 }
 
-@media screen and (max-width:825px) {
+@media screen and (max-width:900px) {
+	/*page*/
+	#page {
+		max-width:100%;
+	}
 	/*Header*/
 	header { width:100%; background-color:rgba(0,0,0,.65);} 
 	header img {display:none;}
 	header h1, header h1 a,header h1 a:visited {display:block; position: relative; top: 0px; color:#fff; text-align:center;}
-
+	
 	/*Commitions*/
 		/*section*/
 		.ex {
