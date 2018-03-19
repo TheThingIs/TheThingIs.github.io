@@ -57,6 +57,11 @@ main img {width: 100%;}
 		width:75%;
 		margin:10% auto;
 		overflow:hidden;
+		background-color:#f1f1f1;
+	}
+	.ex h2 {
+		margin:auto;
+		background-color:white;
 	}
 	.ex .imgex {
 		float:left;
@@ -129,13 +134,13 @@ main img {width: 100%;}
 		margin:auto;
 		display:block;
 		width:80%;
-		max-width:700px;
+		max-width:1000px;
 	}
 	
 	.close {
 		position:absolute;
 		top:15px;
-		right:35;
+		right:35px;
 		color:#f1f1f1;
 		font-size:40px;
 		font-weight:bold;
@@ -226,6 +231,7 @@ main img {width: 100%;}
 	height:50%;
 }
 .block h2 {
+	margin:5% auto;
 	display:block;
 	text-decoration:none;
 }	  
