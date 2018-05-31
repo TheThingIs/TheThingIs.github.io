@@ -46,6 +46,27 @@ main { background-color:#fff;}
 main img {width: 100%;}
 .w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
 
+/*Streams*/ 
+	/*Games*/
+		/*Minecraft*/
+			#therealm {
+				background-image:url(img/mcbg.png);
+				background-size:cover;
+				background-attachment:fixed;
+				padding:2.5% 0;
+			}
+		
+			#realminfo {
+				margin:2.5% auto;
+				width:60%;
+				background-color:#f1f1f1;
+				border:5px solid grey;
+				padding:2.5%;
+			}
+			
+			
+
+
 /*commissions*/
 	.infotxt {
 		width:40%;
@@ -72,7 +93,7 @@ main img {width: 100%;}
 		transition:0.3s;
 	}
 
-	.ex .imgex:hover {
+	.imgex:hover {
 		opacity:0.7;
 		width:50%;
 	}
@@ -178,18 +199,25 @@ main img {width: 100%;}
 
 /*About us*/
 	/*section staff*/
-	.about::after {content:'';clear:both;display:table;}
-	.stafftxt {
-		padding:2.5%;
-		margin:2.5%;
-		width:40%;
-		height:500px;
-		background-color:#f1f1f1;
+	
+	/*.about::after {content:'';clear:both;display:table;}*/
+	.about {
+		display:flex;
+		flex-wrap:wrap;
 	}
-	.stafftxt {float:left;}
+	.stafftxt {
+		padding:5%;
+		padding-top:1%;
+		margin:5% auto;
+		width:35%;
+		background-color:#f1f1f1;
+		border:5px solid grey;
+	}
+	.stafftxt {}
 	img.avatar {
-		width:80px;
+		width:16%;
 		border-radius:50%;
+		margin:0 42%;
 	}
 	.staffinfo div span {position:relative;}
 	.staffinfo div h2 {
@@ -199,12 +227,51 @@ main img {width: 100%;}
 		left:100%;
 	}
 	.staffinfo {clear:both;}
+	
+	/*TheThingIs section*/
+	
 	#thethingisinfo {
-		padding:2.5%;
+		padding:2.5% 15%;
 		margin:2.5%;
 		width:90%;
 		height:auto;
 		background-color:#f1f1f1;
+		border:5px solid grey;
+	}
+	#thethingisinfo img.avatar {
+		display:inline;
+		width:15%;
+		margin:0 45%;
+	}
+	#thethingisinfo h1, h2, h3{
+		margin: 1.5% auto 0 auto;
+		text-align:center;
+		display:block;
+	}
+	#thethingisinfo p, #therealm p{
+		margin:2.5% 0;
+	}
+	#sonas img {
+		display:inline;
+		width:100%;
+		margin:0;
+	}
+	#thingtext {
+		display:inline-block;
+		position:relative;
+		width:40%;
+	}
+	#thingimg, #modeimg{
+		float:right;
+		display:inline-block;
+		position:relative;
+		right:0px;
+		width:40%;
+	}
+	#thingimg img {width:100%; margin:0;}
+	#thingtext, #thingimg::after{
+		content:"";
+		clear:both;
 	}
 	
 /*Games*/
@@ -220,7 +287,7 @@ main img {width: 100%;}
 
 
 
-/*   ___blockqoute___   */
+/*   ___blockqoute___   används inte
 .block {
 	overflow:hidden;
 	padding-top:5px;
@@ -249,7 +316,7 @@ main img {width: 100%;}
 	transition:width 4s;
 	margin:auto;
 	margin-top:10px;
-}
+}*/
 
 
 /*   ___footer___   */
@@ -257,10 +324,23 @@ footer {height:64px; background-color:white; position:relative; padding:10px;}
 footer p {
 	display:inline;
 	position:absolute;
-	bottom:10px;
+	top:10px;
 	margin:0;
 }
-footer div {display:inline; margin:0; position:absolute; bottom:10px; left:150px;}
+footer div {
+		float:right;
+		position:relative;
+		top:5px
+}
+footer a {
+	
+	
+}
+footer img {
+	height:50px;
+	margin:0 12.5px;
+}
+
 
 
 
@@ -329,6 +409,15 @@ nav ul ul ul { left: 100%; top: 0px; }
 			margin:0;
 		}
 	/*about us*/
+	#thingimg, #thingtext {
+		width:100%;
+		float:none;
+		margin-top:5%;
+	}
+	#thethingisinfo img.avatar {
+		width:50%;
+		margin:auto 25%;
+	}
 	.stafftxt {
 		float:none;
 		width:90%;
@@ -409,7 +498,7 @@ nav ul ul ul { left: 100%; top: 0px; }
 	
 	nav a[aria-haspopup="true"]::after {display:none;}
 	
-	footer {display:none;}
+	footer {}
 	
 	
 	
