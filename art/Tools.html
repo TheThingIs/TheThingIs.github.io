@@ -4,6 +4,7 @@
 		<title>TheThingIs</title>
 		<meta charset="utf-8">
 		<link href="../Style.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	</head>
 	
   <body>
@@ -74,8 +75,55 @@ function carousel() {
 					<h3>Art Library</h3>
 				</div>
 				
+				<div id="lib1" class="libbg"></div>
+				<div id="lib2" class="libbg"></div>
+				<div id="lib3" class="libbg"></div>
+				
 				<content>
+					<img src="library/1.png" alt="" class="imgex">
+					<img src="library/2.png" alt="" class="imgex">
+					<img src="library/3.png" alt="" class="imgex">
+					<img src="library/4.png" alt="" class="imgex">
+					<img src="library/5.png" alt="" class="imgex">
+					<img src="library/6.png" alt="" class="imgex">
+					<img src="library/7.png" alt="" class="imgex">
+					<img src="library/8.png" alt="" class="imgex">
+					<img src="library/9.png" alt="" class="imgex">
+					<img src="library/10.png" alt="" class="imgex">
+					<img src="library/11.png" alt="" class="imgex">
+					<img src="library/12.png" alt="" class="imgex">
+					<img src="library/13.png" alt="" class="imgex">
+					<img src="library/14.png" alt="" class="imgex">
+					<img src="library/15.png" alt="" class="imgex">
+					<img src="library/16.png" alt="" class="imgex">
+					<img src="library/17.png" alt="" class="imgex">
+					<img src="library/18.png" alt="" class="imgex">
+					<img src="library/19.png" alt="" class="imgex">
+					<img src="library/20.png" alt="" class="imgex">
+					<img src="library/21.png" alt="" class="imgex">
+					<img src="library/22.png" alt="" class="imgex">
+					<img src="library/23.png" alt="" class="imgex">
+					<img src="library/24.png" alt="" class="imgex">
+					<img src="library/25.png" alt="" class="imgex">
+				</content>
+			</section>
+			
+			<section id="fan">
+				<div class="arttitle">
+					<h3>Fanart! hover for more info!</h3>
+				</div>
+				<content>
+				<div class="faninfo"><img src="fanart/rjkun.png" alt=""><div>
+					<img src="../img/rjlogo.png" alt="" class="avatar">
+					<h3>By RjKun</h3>
+					<a href="">Instagram</a>
+				</div></div>
+				
+				<div class="faninfo"><img src="" alt=""><div )>
 					<img src="" alt="">
+					<h3></h3>
+					<a href=""></a>
+				</div></div>
 				</content>
 			</section>
 			
@@ -159,6 +207,14 @@ function carousel() {
 					</li>
 				</ul>
 			</nav>
+			
+			
+			
+			<div id="myModal" class="modal">
+				<spam class="close">X</spam>
+				<img class="modal-content" id="img01">
+				<div id="caption"></div>
+			</div>
       
      <footer>
 		<p>&copy2018 TheThingIs</p>
@@ -170,7 +226,30 @@ function carousel() {
         </div>
       </footer>
     	
-    	
+    	<script>
+		// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = $('.imgex');
+var modalImg = $("#img01");
+var captionText = document.getElementById("caption");
+$('.imgex').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+		
+		</script>
     	
     	
     </div>
