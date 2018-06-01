@@ -36,6 +36,8 @@ body {
   
 }
 
+h1, h2, h3 {text-align:center;}
+
 /*   __Header__   */
 header {z-index: 2; margin: 0; position:fixed;}
 header img { width: 80px; margin: 5px 20px -10px 20px; display:inline;}
@@ -48,16 +50,24 @@ main img {width: 100%;}
 
 /*Streams*/ 
 	/*Games*/
-		/*Minecraft*/
-			#therealm {
-				background-image:url(img/mcbg.png);
+		/*Minecraft+terraria*/
+			.game {
+				
 				background-size:cover;
 				background-attachment:fixed;
-				padding:2.5% 0;
+				padding:2.5% 0 10% 0;
+				min-height:500px;
+			}
+			
+			#therealm{
+				background-image:url(img/mcbg.png);
+			}
+			#terraria {
+				background-image:url(img/terrariabg.png);
 			}
 		
-			.realm {
-				margin:2.5% auto;
+			.gameblock {
+				margin:5% auto;
 				width:60%;
 				background-color:#f1f1f1;
 				border:5px solid grey;
@@ -70,26 +80,30 @@ main img {width: 100%;}
 			#joinrealm ol {
 				margin:2.5% 5%;
 			}
-			#joinrealm ol spam {
-				display: none; 
-				transform:scaleY(0); 
+			#joinrealm ol spam { 
 				overflow:hidden; 
 				padding:2.5%; 
 				border:5px dotted grey;
 				margin:2.5%;
-				transition:transform 20s; 
+				transition:height 20s ease;
+				display: block; 
 			}
+
 			#joinrealm spam li {
 				margin:2.5%;
 			}
-			#joinrealm ol li:hover spam {display: block; transform:scaleY(1); }
 			
 			 #realmmap ul{
 				 columns:3;
 			 }
-			 #realmmap h3 {
+			 .games h3 {
 				 margin-bottom:2%;
 			 }
+			
+			#termod ul { 
+				columns:4;
+				margin:0 10%;
+			}
 
 
 /*commissions*/
@@ -98,12 +112,14 @@ main img {width: 100%;}
 		margin:10% auto;
 		padding:5%;
 		background-color:white;
+		border:5px solid grey;
 	}
 	.ex {
 		width:75%;
 		margin:10% auto;
 		overflow:hidden;
 		background-color:#f1f1f1;
+		border:5px solid grey;
 	}
 	.ex h2 {
 		margin:auto;
@@ -217,10 +233,32 @@ main img {width: 100%;}
     to {transform:scale(1)}
 	}
 
-/*Toools*/
-	/*how I draw*/
+/*Toools (art)*/
+	/*tools*/
+
+		.arttitle {
+			width:100%;
+			background-color:#f1f1f1;
+			padding:2.5% 0;
+		}
+		#how {
+			width:50%;
+		}
+		#iframecont  {
+			width:100%;
+			position:relative;
+			height:0;
+			overflow:hidden; 
+			padding-bottom:56.25%;
+		}	
 		
-	
+		#how iframe {
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+		}
 
 /*About us*/
 	/*section staff*/
@@ -268,7 +306,7 @@ main img {width: 100%;}
 		width:15%;
 		margin:0 45%;
 	}
-	#thethingisinfo h1, h2, h3{
+	#thethingisinfo h1,#thethingisinfo h2,#thethingisinfo h3{
 		margin: 1.5% auto 0 auto;
 		text-align:center;
 		display:block;
