@@ -235,7 +235,9 @@ main img {width: 100%;}
 
 /*Toools (art)*/
 	/*tools*/
-
+		section.art section{
+			position:relative;
+		}
 		.arttitle {
 			width:100%;
 			background-color:#f1f1f1;
