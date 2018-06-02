@@ -296,12 +296,17 @@ main img {width: 100%;}
 			display:flex;
 			flex-flow:wrap row;
 			justify-content: space-around;
+			padding:2.5%;
+		}
+		
+		.holder {
+			margin:auto;
 		}
 		
 		.faninfo {
-			background-color:#f1f1f1;
+			margin:5% 0;
+			background-color:#e0e0e0;
 			overflow:hidden;
-			margin:auto;
 		}
 		
 		.faninfo > img {
@@ -329,6 +334,7 @@ main img {width: 100%;}
 		.faninfo:hover > div {
 			max-height:300px;
 		}
+		
 		
 /*About us*/
 	/*section staff*/
