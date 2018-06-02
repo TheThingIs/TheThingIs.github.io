@@ -620,6 +620,15 @@ nav ul ul ul { left: 100%; top: 0px; }
 		margin-left:auto;
 		margin-right:auto;
 	}
+	
+	/*modal*/
+	.modal-content {
+		margin:auto;
+		display:block;
+		width:80%;
+		height:auto;
+		max-width:;
+	}
 
 	/*nav*/
 	nav { position: static; width:auto; padding:20px 15px; background-color: rgba(49,33,53,1); }
