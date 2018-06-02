@@ -1,0 +1,620 @@
+*{
+	margin:0;
+	padding:0;
+	
+}
+
+body {
+	font-family: 'Open Sans', sans-serif; 
+	font-size: 16px; 
+	font-weight: 300; 
+	color: #555;
+	margin: 0;
+	padding: 0;
+	background-image:url(img/spacething.png);
+ /* background-size:100px 100px; */
+	background-size:cover;
+	background-attachment:fixed;
+  background-color:rgba(49,33,53,.80);
+  animation-name:example;
+	animation-duration:7s;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear;
+}
+/*
+@keyframes example {
+    from {background-position:0 0 ;}
+    to {background-position: 200px 100px;}
+}
+*/
+#page {
+	
+	width:100%;
+  max-width:80%; 
+  margin: 0 auto; 
+  position:relative;
+  
+}
+
+h1, h2, h3 {text-align:center;}
+
+/*   __Header__   */
+header {z-index: 2; margin: 0; position:fixed;}
+header img { width: 80px; margin: 5px 20px -10px 20px; display:inline;}
+header h1, header h1 a, header h1 a:visited{text-decoration:none; display:inline; position: relative; top: 0px; color:#fff;}
+
+/*   __Main__   */
+main { background-color:#fff;}
+main img {width: 100%;}
+.w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+
+/*Streams*/ 
+	/*Games*/
+		/*Minecraft+terraria*/
+			.game {
+				
+				background-size:cover;
+				background-attachment:fixed;
+				padding:2.5% 0 10% 0;
+				min-height:500px;
+			}
+			
+			#therealm{
+				background-image:url(img/mcbg.png);
+			}
+			#terraria {
+				background-image:url(img/terrariabg.png);
+			}
+		
+			.gameblock {
+				margin:5% auto;
+				width:60%;
+				background-color:#f1f1f1;
+				border:5px solid grey;
+				padding:2.5%;
+			}
+			
+			#joinrealm {
+				width:30%;
+			}
+			#joinrealm ol {
+				margin:2.5% 5%;
+			}
+			#joinrealm ol spam { 
+				overflow:hidden; 
+				padding:2.5%; 
+				border:5px dotted grey;
+				margin:2.5%;
+				transition:height 20s ease;
+				display: block; 
+			}
+
+			#joinrealm spam li {
+				margin:2.5%;
+			}
+			
+			 #realmmap ul{
+				 columns:3;
+			 }
+			 .games h3 {
+				 margin-bottom:2%;
+			 }
+			
+			#termod ul { 
+				columns:4;
+				margin:0 10%;
+			}
+			
+			
+
+
+/*commissions*/
+	.infotxt {
+		width:40%;
+		margin:10% auto;
+		padding:5%;
+		background-color:white;
+		border:5px solid grey;
+	}
+	.ex {
+		width:75%;
+		margin:10% auto;
+		overflow:hidden;
+		background-color:#f1f1f1;
+		border:5px solid grey;
+	}
+	.ex h2 {
+		margin:auto;
+		background-color:white;
+	}
+	.ex .imgex {
+		float:left;
+		background-color:;
+		cursor:pointer;
+		width:50%;
+		margin:0;
+		transition:0.3s;
+	}
+
+	.imgex:hover {
+		opacity:0.7;
+	}
+	section.commission {
+		margin:0%;
+		padding:10px; 
+		position:relative;
+		background-color:#fff;
+	}
+	section.commission {
+		content:'';
+		clear:both;
+		display:table;
+	}
+	section.commission h2 {
+		text-align:center;
+	}
+	div.comlink {
+		position:absolute;
+		display:block;
+		top:-120px;
+	}
+	#headsec{
+		height:100vh;
+		background-image:url(img/universe.png);
+		background-size:cover;
+		display:table;
+		background-attachment:fixed;
+	}
+	#fullsec{
+		height:100vh;
+		background-image:url(img/kopertje.png);
+		background-size:cover;
+		display:table;
+		background-attachment:fixed;
+	}
+	#complexsec{
+		height:100vh;
+		background-image:url(img/evets.png);
+		background-size:cover;
+		display:table;
+		background-attachment:fixed;
+	}
+	
+	.modal {
+		display: none;
+		position:fixed;
+		z-index:3;
+		padding-top:100px;
+		left:0;
+		top:0;
+		width:100%;
+		height:100%;
+		overflow:auto;
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0,0.9);
+	}
+	
+	.modal-content {
+		margin:auto;
+		display:block;
+		height:80%;
+		max-width:;
+	}
+	
+	.close {
+		position:absolute;
+		top:15px;
+		right:35px;
+		color:#f1f1f1;
+		font-size:40px;
+		font-weight:bold;
+		transition:0.3s;
+	}
+	
+	.close:hover, .close:focus {
+		color:#bbb;
+		text-decoration:none;
+		cursor:pointer;
+	}
+	
+	.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+	}
+	
+	@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+	}
+	
+	@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+	}
+
+/*Toools (art)*/
+	/*tools*/
+		section.art section{
+			position:relative;
+		}
+		.arttitle {
+			width:100%;
+			background-color:#f1f1f1;
+			padding:2.5% 0;
+		}
+		#how {
+			width:50%;
+		}
+		#iframecont  {
+			width:100%;
+			position:relative;
+			height:0;
+			overflow:hidden; 
+			padding-bottom:56.25%;
+		}	
+		
+		#how iframe {
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+		}
+		
+		#artlibrary {position:relative;}
+		
+		#artlibrary content{
+			display:flex;
+			flex-flow:wrap row;
+			justify-content: space-around;
+		}
+		 
+		#artlibrary content img{
+			max-height:300px;
+			margin:2.5% auto;
+			background-color:#e0e0e0;
+		}
+		
+		.libbg {
+			position:absolute;
+			float:left;
+			top:0;
+			z-index:-1;
+			width:100%;
+			height:33.33333%;
+			background-attachment:fixed;
+			background-size:cover;
+		}
+		#lib1{background-image: url(img/anulot.png);}
+		#lib2{background-image: url(img/obsidian.png); top:33.33333%;}
+		#lib3{background-image: url(img/spacejen.png); top:66.67%;}
+		
+		/*fan art*/
+		#fan content {
+			display:flex;
+			flex-flow:wrap row;
+			justify-content: space-around;
+		}
+		
+		.faninfo {
+			background-color:#f1f1f1;
+			overflow:hidden;
+			margin:auto;
+		}
+		
+		.faninfo > img {
+			height:300px;
+		}
+		
+		.faninfo .fanavatar {
+			display:block;
+			height:100px;
+			border-radius:50%;
+			margin:auto;
+		}
+		
+		.faninfo a {
+			display:block;
+			text-align:center;
+			padding-bottom:2.5%;
+		}
+		
+		.faninfo div {
+			max-height:0;
+			transition:max-height 2s; 
+		}
+		
+		.faninfo:hover > div {
+			max-height:300px;
+		}
+		
+/*About us*/
+	/*section staff*/
+	
+	/*.about::after {content:'';clear:both;display:table;}*/
+	.about {
+		display:flex;
+		flex-wrap:wrap;
+	}
+	.stafftxt {
+		padding:5%;
+		padding-top:1%;
+		margin:5% auto;
+		width:35%;
+		background-color:#f1f1f1;
+		border:5px solid grey;
+	}
+	.stafftxt {}
+	img.avatar {
+		width:16%;
+		border-radius:50%;
+		margin:0 42%;
+	}
+	.staffinfo div span {position:relative;}
+	.staffinfo div h2 {
+		display:inline;
+		position:absolute;
+		bottom:40%;
+		left:100%;
+	}
+	.staffinfo {clear:both;}
+	
+	/*TheThingIs section*/
+	
+	#thethingisinfo {
+		padding:2.5% 15%;
+		margin:2.5%;
+		width:90%;
+		height:auto;
+		background-color:#f1f1f1;
+		border:5px solid grey;
+	}
+	#thethingisinfo img.avatar {
+		display:inline;
+		width:15%;
+		margin:0 45%;
+	}
+	#thethingisinfo h1,#thethingisinfo h2,#thethingisinfo h3{
+		margin: 1.5% auto 0 auto;
+		text-align:center;
+		display:block;
+	}
+	#thethingisinfo p, #therealm p{
+		margin:2.5% 0;
+	}
+	#sonas img {
+		display:inline;
+		width:100%;
+		margin:0;
+	}
+	#thingtext {
+		display:inline-block;
+		position:relative;
+		width:40%;
+	}
+	#thingimg, #modeimg{
+		float:right;
+		display:inline-block;
+		position:relative;
+		right:0px;
+		width:40%;
+	}
+	#thingimg img {width:100%; margin:0;}
+	#thingtext, #thingimg::after{
+		content:"";
+		clear:both;
+	}
+	
+/*Games*/
+	/*section - intro*/
+	section#intro {
+		position:relative;
+		margin:0;
+		width:90%;
+		padding:10px 5%;
+		background-color:#fff;
+	}
+	section#intro p {text-align:center;}
+
+
+
+
+
+
+/*   ___footer___   */
+footer {height:64px; background-color:white; position:relative; padding:10px;}
+footer p {
+	display:inline;
+	position:absolute;
+	top:10px;
+	margin:0;
+}
+footer div {
+		float:right;
+		position:relative;
+		top:5px
+}
+footer a {
+	
+	
+}
+footer img {
+	height:50px;
+	margin:0 12.5px;
+}
+
+
+
+
+/*   __nav__    */
+nav {
+	background-color: rgba(0,0,0,.65); 
+	 position: fixed;
+	 top: 0px; left: 0;
+	 padding: 30px 0 0 35%;
+	 width: 65%;
+	 text-align: center;
+	z-index:1;
+ }
+nav::after {content:''; display: both;}
+
+nav a[aria-haspopup="true"]::after {
+	content:'';
+	display:block;
+	width:0px;
+	height:0px;
+	position:absolute;
+	top:16px; right:15px;
+	border-top: 4px solid transparent;
+	border-bottom:4px solid transparent;
+	border-left:4px solid white;
+}
+
+nav > ul > li > a[aria-haspopup="true"]::after {
+	border-left:4px solid transparent;
+	border-right:4px solid transparent;
+	border-top:4px solid white;
+	left: 20px; right:auto;
+	bottom: 6px; top: auto;
+}
+
+nav ul { list-style: none; margin: 0; padding: 0; }
+ 
+nav ul li a {
+	font-size: 1.1em;
+	display:inline-block;
+	color: #fff;
+	padding: 20px;
+	text-decoration: none;
+	width: 120px;
+	position: relative;
+} 
+
+
+nav ul ul { position: absolute; top: 100%; display: none; background-color: rgba(49,33,53,.80);}
+nav ul li:hover { background-color: rgba(92,13,116,.75);}
+nav ul li:hover > ul {display: block;} 
+@media screen and (min-width:695px) {nav > ul > li {float:left;}}
+nav ul ul li { position: relative; }
+nav ul ul ul { left: 100%; top: 0px; }
+
+
+@media screen and (max-width:1000px) {
+	/*header*/
+	h1 { font-size:1.4em; }
+	header img {width:60px;}
+	
+	/*commission*/
+		/*section*/
+		section.commission img {
+			width:100%;
+			margin:0;
+		}
+	/*about us*/
+	#thingimg, #thingtext {
+		width:100%;
+		float:none;
+		margin-top:5%;
+	}
+	#thethingisinfo img.avatar {
+		width:50%;
+		margin:auto 25%;
+	}
+	.stafftxt {
+		float:none;
+		width:90%;
+	}
+	
+	
+	/*nav*/
+	nav { padding-top:10px; }
+	nav ul li a {
+		width:90px;
+		font-size:1em;
+	}
+	
+}
+
+@media screen and (max-width:900px) {
+	/*page*/
+	#page {
+		max-width:100%;
+	}
+	/*Header*/
+	header { width:100%; background-color:rgba(0,0,0,.65);} 
+	header img {display:none;}
+	header h1, header h1 a,header h1 a:visited {display:block; position: relative; top: 0px; color:#fff; text-align:center;}
+	
+	/*Commitions*/
+		/*section*/
+		.ex {
+			position:relative;
+			width:auto;
+		}
+		.ex img {float:none; width:70%; margin:0 15%;}
+		section.commission {
+			height:auto;
+		}
+		#headsec {
+			height:auto;
+		}
+		section.commission .infotxt {
+			width:auto;
+		}
+	
+	
+	/*block*/
+	.block{
+		display:none;
+	}
+
+
+	/*nav*/
+	nav { position: static; width:auto; padding:20px 15px; background-color: rgba(49,33,53,1); }
+	
+	nav ul,
+	nav ul ul,
+	nav ul ul ul {
+		display:block;
+		position:static;
+	}
+	
+	nav > ul { padding:0;}
+	
+	nav > ul > li { float:none; margin-top:25px;}
+	
+	nav ul li:hover {background:none;}
+	nav ul li a {
+		width:auto;
+		display:block;
+		margin:8px 10px;
+		padding:8px 16px;
+		border:1px solid rgba(255,255,255,.25);
+	}
+	nav ul li a:hover { background-color: rgba(92,13,116,.25);}
+	
+	nav ul ul { background:none;}
+	
+	nav ul ul li a {margin-left:60px;}
+	nav ul ul ul li a {margin-left:120px;}
+	
+	nav a[aria-haspopup="true"]::after {display:none;}
+	
+	footer {}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
