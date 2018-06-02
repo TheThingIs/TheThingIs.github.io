@@ -233,6 +233,16 @@ main img {width: 100%;}
     from {transform:scale(0)}
     to {transform:scale(1)}
 	}
+	
+	#ordercom {
+		width:40%;
+	}
+	
+	form {
+		margin:auto;
+		display:block;
+		text-align:center;
+	}
 
 /*Toools (art)*/
 	/*tools*/
@@ -247,7 +257,11 @@ main img {width: 100%;}
 		#how {
 			width:50%;
 		}
-		#iframecont  {
+		#speedpaint {
+			width:50%;
+			height:auto;
+		}
+		.iframecont  {
 			width:100%;
 			position:relative;
 			height:0;
@@ -255,7 +269,7 @@ main img {width: 100%;}
 			padding-bottom:56.25%;
 		}	
 		
-		#how iframe {
+		#tools iframe {
 			position:absolute;
 			top:0;
 			left:0;
@@ -356,8 +370,9 @@ main img {width: 100%;}
 	.stafftxt {}
 	img.avatar {
 		width:16%;
+		display:block;
 		border-radius:50%;
-		margin:0 42%;
+		margin:auto;
 	}
 	.staffinfo div span {position:relative;}
 	.staffinfo div h2 {
@@ -379,9 +394,8 @@ main img {width: 100%;}
 		border:5px solid grey;
 	}
 	#thethingisinfo img.avatar {
-		display:inline;
+		display:block;
 		width:15%;
-		margin:0 45%;
 	}
 	#thethingisinfo h1,#thethingisinfo h2,#thethingisinfo h3{
 		margin: 1.5% auto 0 auto;
@@ -394,7 +408,7 @@ main img {width: 100%;}
 	#sonas img {
 		display:inline;
 		width:100%;
-		margin:0;
+		margin:auto;
 	}
 	#thingtext {
 		display:inline-block;
@@ -508,7 +522,7 @@ nav ul ul li { position: relative; }
 nav ul ul ul { left: 100%; top: 0px; }
 
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1200px) {
 	/*header*/
 	h1 { font-size:1.4em; }
 	header img {width:60px;}
@@ -519,15 +533,20 @@ nav ul ul ul { left: 100%; top: 0px; }
 			width:100%;
 			margin:0;
 		}
+		
 	/*about us*/
+	#thethingisinfo {
+		width:100%;
+		margin:2.5% 0;
+	}
 	#thingimg, #thingtext {
 		width:100%;
 		float:none;
 		margin-top:5%;
 	}
 	#thethingisinfo img.avatar {
-		width:50%;
-		margin:auto 25%;
+		width:30%;
+		display:block;
 	}
 	.stafftxt {
 		float:none;
@@ -544,7 +563,7 @@ nav ul ul ul { left: 100%; top: 0px; }
 	
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:960px) {
 	/*page*/
 	#page {
 		max-width:100%;
@@ -558,25 +577,49 @@ nav ul ul ul { left: 100%; top: 0px; }
 		/*section*/
 		.ex {
 			position:relative;
-			width:auto;
+			width:70%;
 		}
-		.ex img {float:none; width:70%; margin:0 15%;}
+		.ex .imgex {float:none; width:100%; margin:0;}
 		section.commission {
 			height:auto;
+			padding-left:0;
+			padding-right:0;
 		}
 		#headsec {
 			height:auto;
 		}
 		section.commission .infotxt {
 			width:auto;
+			margin:10% 0;
 		}
+		
+		#ordercom {
+			margin-left:auto;
+			margin-right:auto;
+			width:60%;
+		}
+		
+	/*Games*/
 	
-	
-	/*block*/
-	.block{
-		display:none;
+	.gameblock {
+		width:100%;
+		margin-right:0;
+		margin-left:0;
 	}
-
+	
+	#joinrealm {
+		width:60%;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	/*tools*/
+	
+	#how, #speedpaint {
+		width:80%;
+		margin-left:auto;
+		margin-right:auto;
+	}
 
 	/*nav*/
 	nav { position: static; width:auto; padding:20px 15px; background-color: rgba(49,33,53,1); }
