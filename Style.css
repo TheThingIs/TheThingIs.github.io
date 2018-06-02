@@ -297,6 +297,7 @@ main img {width: 100%;}
 			flex-flow:wrap row;
 			justify-content: space-around;
 			padding:2.5%;
+			min-height:500px;
 		}
 		
 		.holder {
