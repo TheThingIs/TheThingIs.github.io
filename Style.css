@@ -282,13 +282,13 @@ main img {width: 100%;}
 		
 		#artlibrary {position:relative;}
 		
-		#artlibrary content{
+		#artlibrary #libcont {
 			display:flex;
 			flex-flow:wrap row;
 			justify-content: space-around;
 		}
 		 
-		#artlibrary content img{
+		#artlibrary #libcont img{
 			max-height:300px;
 			margin:2.5% auto;
 			background-color:#e0e0e0;
