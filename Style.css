@@ -288,7 +288,7 @@ main img {width: 100%;}
 			justify-content: space-around;
 		}
 		 
-		#artlibrary #libcont img{
+		#artlibrary .libcont img{
 			max-height:300px;
 			margin:2.5% auto;
 			background-color:#e0e0e0;
@@ -309,7 +309,7 @@ main img {width: 100%;}
 		#lib3{background-image: url(img/spacejen.png); top:66.67%;}
 		
 		/*fan art*/
-		#fan content {
+		#fan .libcont {
 			display:flex;
 			flex-flow:wrap row;
 			justify-content: space-around;
