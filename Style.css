@@ -362,6 +362,7 @@ main img {width: 100%;}
 		flex-wrap:wrap;
 	}
 	.stafftxt {
+		position:relative;
 		padding:5%;
 		padding-top:1%;
 		margin:5% auto;
@@ -379,9 +380,6 @@ main img {width: 100%;}
 	.staffinfo div span {position:relative;}
 	.staffinfo div h2 {
 		display:inline;
-		position:absolute;
-		bottom:40%;
-		left:100%;
 	}
 	.staffinfo {clear:both;}
 	
