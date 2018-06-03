@@ -249,6 +249,9 @@ main img {width: 100%;}
 		section.art section{
 			position:relative;
 		}
+		.exampleimg {
+			width:100%;
+		}
 		.arttitle {
 			width:100%;
 			background-color:#f1f1f1;
@@ -354,7 +357,6 @@ main img {width: 100%;}
 /*About us*/
 	/*section staff*/
 	
-	/*.about::after {content:'';clear:both;display:table;}*/
 	.about {
 		display:flex;
 		flex-wrap:wrap;
@@ -410,23 +412,28 @@ main img {width: 100%;}
 		width:100%;
 		margin:auto;
 	}
-	#thingtext {
-		display:inline-block;
+	#thingholder {
+		width:100%;
 		position:relative;
+		height:auto;
+		overflow:visible;
+	}
+	#thingtext, #thingmode{
+		display:inline;
 		width:40%;
+		float:left;
 	}
 	#thingimg, #modeimg{
-		float:right;
-		display:inline-block;
-		position:relative;
-		right:0px;
+		display:inline;
 		width:40%;
+		float:right;
 	}
-	#thingimg img {width:100%; margin:0;}
-	#thingtext, #thingimg::after{
+	#thingholder::after {
 		content:"";
 		clear:both;
+		display:table;
 	}
+	#thingimg img {width:100%; margin:0;}
 	
 /*Games*/
 	/*section - intro*/
