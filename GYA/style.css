@@ -1,0 +1,177 @@
+/*header*/
+*{
+	padding:0;
+	margin:0;
+	border:0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#main {
+	background-image: url(img/mainbg.png);
+	background-size: cover;
+	background-attachment: fixed;
+	width: 90%;
+	margin:auto;
+	padding: 91px 5% 5% 5%;
+	height: 100%;
+}
+
+header {
+	background-color: dimgrey;
+	display: block;
+}
+
+header h1 {
+	display:inline;
+	margin: 0 0 70px 0;
+
+}
+
+header img{
+	margin:5px;
+	
+}
+
+/*nav*/
+nav {
+	width: 10%;
+	background-color: dimgray;
+	padding:10px;
+	float:left;
+	position: absolute;
+	top:180px;
+}
+
+
+
+nav ul li {
+	list-style-type: none;
+	margin: 5px 0;
+}
+
+nav ul li a {
+	display: block;
+	padding:10px 5%;
+	text-decoration: none;
+	color:#000000;
+	background-color: gray;	
+}
+
+nav ul li ul {
+	display: none;
+}
+
+nav ul li ul li {
+	margin-left: 20px;
+	list-style-type: circle;
+	
+}
+
+/*general content*/
+page {
+	width: 100%;
+}
+
+page content {
+	background-color: lightgray;
+	padding: ;
+	width: 100%;
+}
+
+page content h1,h2,h3 {
+	width: 100%; 
+	text-align: center;
+	display: block;
+	margin: auto;
+	
+}
+page content p {
+	font-size: 1.1em;
+	padding: 0 10%;
+}
+
+page content ol {
+	margin-left: 10%;
+	font-size: 1.3em;
+}
+
+page .contentholder {
+	display: flex;
+	flex-flow: wrap;
+	margin:50px 20% 0 20%;
+	background-color: gray;
+	padding: 20px 2%
+}
+
+page #members .member {
+	padding:2% ;
+	width: 15%;
+	min-height: 30px;
+	background-color: orange;
+	margin:3%;
+	text-align: center;
+	min-width: 120px;
+	
+	
+}
+
+page .mcholder {
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 100px 0;
+}
+
+page #mc1 {
+	background-image: url(img/towerbg.png);
+}
+
+page #mc2 {
+	background-image: url(img/hallbg.png);	
+}
+
+page #mc3 {
+	background-image: url(img/corebg.png)
+}
+
+page #mc4 {
+	background-image: url(img/oceanbg.png)
+}
+
+page #members .member h2 {
+	width: 100%;
+	font-size: 1em;
+}
+
+page #members img {
+	width: 90%;
+	border-radius: 50%;
+	
+}
+
+page #members h2 {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+iframe {
+	width: 100%;
+	height: 100%%;
+	min-height: 600px;
+}
+#mc4 h2, h3{
+	text-align: center;
+	display: block;
+	margin: auto;
+}
+
+.mcholder p {
+	text-align: center;
+}
+
+#mc4 img {
+	margin: 40px auto;
+}
+
+
+
